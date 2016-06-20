@@ -1,5 +1,5 @@
 {
-  "name": "Auburnuavpathprediction",
+  "name": "Auburn REU - Path Prediction",
   "tagline": "Path Prediction Using Neural Networks",
   "body": "The goal of this project is to predict the path of an object based on its past behavior. It is being implemented using neural networks, although the specifics of what type and what libraries have not been decided yet. Updates will be provided as I progress through the project.",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
