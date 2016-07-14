@@ -23,11 +23,15 @@
 
 <p>My first attempt at the project was out of left field. It attempted to extend the idea of Neural Networks to networks with an infinite amount of input and hidden layer nodes. While mathematically interesting it didn't transfer over well to the real world. I was able to implement it, but due poor results I didn't bother continuing it.</p>
 
-<p>My second attempt was very basic. I just used a vanilla feed forward network with back-propagation with 15 hidden nodes. It worked surprisingly well which told me that I wouldn't need to do anything particularly fancy to get this project to a satisfactory level. The average absolute error was</p>
+<p>Due to a dearth of samples, I created all the samples by hand using a simple script to record the coordinates of the mouse. Each program just read these from a text file where each pair of coordinates is separated by a new line and x coordinates and y coordinates are split by a comma. The samples were split in half: the first used to train with 159 samples, and the second used to test with 158 samples. I created the training set in a square of about 760x780 pixels and tried to mimic something with constant velocity by trying to maintain a distance of about 40 pixels between consecutive inputs</p>
+
+<p>My second attempt was very basic. I just used a vanilla feed forward network with back-propagation with 35 hidden nodes. It worked surprisingly well which told me that I wouldn't need to do anything particularly fancy to get this project to a satisfactory level. The average absolute error was (25.5,14.5) (x,y)</p>
 
 <p>My third attempt was a recurrent neural network with a fixed input size (10 coordinate pairs) and fixed output size (1 coordinate pair). It also used back-propagation There was a significant reduction. The error was reduced to (13.3, 8.6)</p>
 
 <p>My fourth attempt was another recurrent neural network with variable input size and a matching output size. For each input it tried to guess the next input and factored that into the back-propagation. There was another fairly significant drop in error to (7.8,6.2).</p>
+
+<p>Something to note is that the original plain neural network actually matched the data it trained on as well as the the final version. However, it didn't predict the other data nearly as well as the others.</p>
 
 <p>I was pretty happy with this result. Though the networks could really use more testing on different data sets.</p>
 
